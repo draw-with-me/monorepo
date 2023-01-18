@@ -14,7 +14,10 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@zam/dto-mapper": ["libs/dto-mapper/src/index.ts"],
+      "@zam/object-mapper": ["libs/object-mapper/src/index.js"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }

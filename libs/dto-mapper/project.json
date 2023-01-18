@@ -1,0 +1,26 @@
+{
+  "name": "dto-mapper",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "libs/dto-mapper/src",
+  "projectType": "library",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "outputs": ["{options.outputPath}"],
+      "options": {
+        "outputPath": "dist/libs/dto-mapper",
+        "main": "libs/dto-mapper/src/index.ts",
+        "tsConfig": "libs/dto-mapper/tsconfig.lib.json",
+        "assets": ["libs/dto-mapper/*.md"]
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": ["libs/dto-mapper/**/*.ts"]
+      }
+    }
+  },
+  "tags": []
+}
